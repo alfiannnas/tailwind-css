@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 export default function First() {
+  const navigate = useNavigate();
   return (
     <>
       <div className="w-44 ml-4">
@@ -20,7 +23,9 @@ export default function First() {
             placeholder="your password"
           />
         </label>
-        <button className="rounded-md bg-sky-600 text-white mt-5 w-28">Login</button>
+        <button className="rounded-md bg-sky-600 text-white mt-5 w-28" onClick={() => navigate("/home")}>
+          Login
+        </button>
       </div>
     </>
   );
