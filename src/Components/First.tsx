@@ -5,6 +5,7 @@ export default function First() {
   return (
     <>
       <div className="w-44 ml-4">
+        <h1>oke</h1>
         <label className="block">
           <span className="after:content-['*'] after:ml-0.5 after:text-red-500 block text-sm font-medium text-slate-700">Email</span>
           <input
