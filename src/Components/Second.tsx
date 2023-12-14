@@ -1,7 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import img from "../assets/test.png";
 
 export default function Second(props) {
+  const LinkRef = useRef(null);
+  const goTo = (ref) => {
+    window.scrollTo({
+      top: ref.offsetTop,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
   const [getPacarSaya, setPacarSaya] = useState(0);
   const [getNamaPacar, setNamaPacar] = useState("");
 
@@ -22,9 +30,55 @@ export default function Second(props) {
               <h1>{getPacarSaya} saya</h1>
               <h1 className="text-xl font-poppins md:text-5xl sm:text-3xl m-4">{props.title}</h1>
               <p className="text-white text-md sm:text-xl md:text-xl m-4">{props.text}</p>
+              <h1>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt itaque voluptates quam esse repudiandae corporis laudantium, excepturi fugiat non perspiciatis reprehenderit veniam, sapiente debitis eius qui rerum eveniet
+                voluptatum fugit vitae ad reiciendis sequi molestias placeat alias! Sequi iste eaque expedita pariatur voluptatem quaerat fugiat repellendus harum, libero tenetur ea illo omnis eligendi voluptatibus quas. Ad at, fugit
+                provident obcaecati eligendi dolor voluptates facere qui, deserunt magni aliquid cupiditate quis reiciendis veniam sit veritatis explicabo adipisci? Quo repellendus optio magnam neque possimus nulla, consectetur nam
+                voluptatibus sint ratione facilis nemo suscipit nostrum ipsa provident nisi quam dignissimos accusantium corrupti maiores?
+              </h1>
+              <h1>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt itaque voluptates quam esse repudiandae corporis laudantium, excepturi fugiat non perspiciatis reprehenderit veniam, sapiente debitis eius qui rerum eveniet
+                voluptatum fugit vitae ad reiciendis sequi molestias placeat alias! Sequi iste eaque expedita pariatur voluptatem quaerat fugiat repellendus harum, libero tenetur ea illo omnis eligendi voluptatibus quas. Ad at, fugit
+                provident obcaecati eligendi dolor voluptates facere qui, deserunt magni aliquid cupiditate quis reiciendis veniam sit veritatis explicabo adipisci? Quo repellendus optio magnam neque possimus nulla, consectetur nam
+                voluptatibus sint ratione facilis nemo suscipit nostrum ipsa provident nisi quam dignissimos accusantium corrupti maiores?
+              </h1>
+              <h1>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt itaque voluptates quam esse repudiandae corporis laudantium, excepturi fugiat non perspiciatis reprehenderit veniam, sapiente debitis eius qui rerum eveniet
+                voluptatum fugit vitae ad reiciendis sequi molestias placeat alias! Sequi iste eaque expedita pariatur voluptatem quaerat fugiat repellendus harum, libero tenetur ea illo omnis eligendi voluptatibus quas. Ad at, fugit
+                provident obcaecati eligendi dolor voluptates facere qui, deserunt magni aliquid cupiditate quis reiciendis veniam sit veritatis explicabo adipisci? Quo repellendus optio magnam neque possimus nulla, consectetur nam
+                voluptatibus sint ratione facilis nemo suscipit nostrum ipsa provident nisi quam dignissimos accusantium corrupti maiores?
+              </h1>
+              <h1>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt itaque voluptates quam esse repudiandae corporis laudantium, excepturi fugiat non perspiciatis reprehenderit veniam, sapiente debitis eius qui rerum eveniet
+                voluptatum fugit vitae ad reiciendis sequi molestias placeat alias! Sequi iste eaque expedita pariatur voluptatem quaerat fugiat repellendus harum, libero tenetur ea illo omnis eligendi voluptatibus quas. Ad at, fugit
+                provident obcaecati eligendi dolor voluptates facere qui, deserunt magni aliquid cupiditate quis reiciendis veniam sit veritatis explicabo adipisci? Quo repellendus optio magnam neque possimus nulla, consectetur nam
+                voluptatibus sint ratione facilis nemo suscipit nostrum ipsa provident nisi quam dignissimos accusantium corrupti maiores?
+              </h1>
+              <h1>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt itaque voluptates quam esse repudiandae corporis laudantium, excepturi fugiat non perspiciatis reprehenderit veniam, sapiente debitis eius qui rerum eveniet
+                voluptatum fugit vitae ad reiciendis sequi molestias placeat alias! Sequi iste eaque expedita pariatur voluptatem quaerat fugiat repellendus harum, libero tenetur ea illo omnis eligendi voluptatibus quas. Ad at, fugit
+                provident obcaecati eligendi dolor voluptates facere qui, deserunt magni aliquid cupiditate quis reiciendis veniam sit veritatis explicabo adipisci? Quo repellendus optio magnam neque possimus nulla, consectetur nam
+                voluptatibus sint ratione facilis nemo suscipit nostrum ipsa provident nisi quam dignissimos accusantium corrupti maiores?
+              </h1>
+              <h1>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt itaque voluptates quam esse repudiandae corporis laudantium, excepturi fugiat non perspiciatis reprehenderit veniam, sapiente debitis eius qui rerum eveniet
+                voluptatum fugit vitae ad reiciendis sequi molestias placeat alias! Sequi iste eaque expedita pariatur voluptatem quaerat fugiat repellendus harum, libero tenetur ea illo omnis eligendi voluptatibus quas. Ad at, fugit
+                provident obcaecati eligendi dolor voluptates facere qui, deserunt magni aliquid cupiditate quis reiciendis veniam sit veritatis explicabo adipisci? Quo repellendus optio magnam neque possimus nulla, consectetur nam
+                voluptatibus sint ratione facilis nemo suscipit nostrum ipsa provident nisi quam dignissimos accusantium corrupti maiores?
+              </h1>
+              <br />
+              <br />
+              <br />
+              <br />
+              <h1 ref={LinkRef}>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt itaque voluptates quam esse repudiandae corporis laudantium, excepturi fugiat non perspiciatis reprehenderit veniam, sapiente debitis eius qui rerum eveniet
+                voluptatum fugit vitae ad reiciendis sequi molestias placeat alias! Sequi iste eaque expedita pariatur voluptatem quaerat fugiat repellendus harum, libero tenetur ea illo omnis eligendi voluptatibus quas. Ad at, fugit
+                provident obcaecati eligendi dolor voluptates facere qui, deserunt magni aliquid cupiditate quis reiciendis veniam sit veritatis explicabo adipisci? Quo repellendus optio magnam neque possimus nulla, consectetur nam
+                voluptatibus sint ratione facilis nemo suscipit nostrum ipsa provident nisi quam dignissimos accusantium corrupti maiores?
+              </h1>
             </div>
           </div>
-          <button className="bg-sky-800" onClick={() => setPacarSaya((prev) => prev + 1)}>
+          <button className="bg-sky-800" onClick={() => goTo(LinkRef.current)}>
             ok
           </button>
         </div>
